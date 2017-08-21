@@ -2,3 +2,11 @@
 body {
   padding-top: 3.5rem;
 }
+
+img {
+	float: right;
+	width: 50%;
+	height: auto;
+	border-radius: 15px;
+	max-width: 200px;
+}
