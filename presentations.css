@@ -4,11 +4,15 @@ body {
 }
 
 img {
-	float: right;
-	width: 70%;
-	height: auto;
-	border-radius: 15px;
-	max-width: 200px;
+  width: 24px;
+  height: auto;
+  border-radius: 5px;
+}
+
+#mapid {
+  align: center; 
+  height: 240px;
+  width: auto;
 }
 
 .jumbotron {
@@ -16,8 +20,4 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom right;
-}
-
-.btn-list {
-  margin-top: 0.5rem;
 }

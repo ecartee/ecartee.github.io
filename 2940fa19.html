@@ -16,101 +16,138 @@
   </head>
 
   <body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="index.html">Elliot Cartee</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="publications.html">Publications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="presentations.html">Presentations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="teaching.html">Teaching</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <div class="jumbotron">
       <div class="container">
         <h1>MATH 2940 Discussion</h1>
         <p>This is the webpage for Elliot Cartee's sections of MATH 2940: Linear Algebra for Engineers at Cornell University in Fall 2019.</p>
-        <p>Every week, I will post copies of the worksheets used in section (with solutions included at the end of the document). I may also include outside material that I think is interesting and relevant to what we are doing in the course.</p>
-        <p>While you are not required to view anything on this webpage, I still think you may find it useful.</p>
+        <p>Every week, I will post copies of the worksheets used in section (with solutions included at the end of the document). I may also include outside material that I think is interesting and relevant to what we are doing in the course. While you are not required to view anything on this webpage, I still think you may find it useful.</p>
         <p>Some official links for the course:</p>
-        <ul>
-          <li><a href=https://www.piazza.com/cornell/fall2019/math2940>Piazza</a></li>
-          <li><a href=https://canvas.cornell.edu/courses/3557>Canvas</a></li>
-          <li><a href=https://www.gradescope.com/courses/59412>Gradescope</a></li>
-        </ul>
-        <p>Some unofficial, but possibly useful external links:</p>
-        <ul>
-          <li> 3Blue1Brown's Youtube series on the <a href=https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab>Essence of Linear Algebra</a> is great for helping to understand the ideas behind the course, and developing geometric intuition. Unfortunately it doesn't really cover any of the more computational aspects of the course.</li>
-        </ul>
+        <p><a class="btn btn-secondary" href="https://www.piazza.com/cornell/fall2019/math2940" role="button">Piazza &raquo;</a></p>
+        <p><a class="btn btn-secondary" href="https://canvas.cornell.edu/courses/3557" role="button">Canvas &raquo;</a></p>
+        <p><a class="btn btn-secondary" href="https://www.gradescope.com/courses/59412" role="button">Gradescope &raquo;</a></p>
+        <p> 3Blue1Brown's Youtube series on the <i>Essence of Linear Algebra</i> is great for helping to understand the ideas behind the course and developing geometric intuition, but it doesn't cover any of the more computational aspects of the course.</p>
+        <p><a class="btn btn-secondary" href="https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab" role="button">Essence of Linear Algebra &raquo;</a></p>
         <p> My office hours are on Sundays from 4:30-6:30pm in Thurston 102.</p>
       </div>
     </div>
 
     <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2>Week 1: August 29, 2019</h2>
-          <p><a href="2940_fa19/Worksheet1.pdf">Worksheet + Solutions</a></p>
+      <div class="card mb-6 shadow-sm">
+        <div class="card-body">
+          <h3 class="card-top">Week 1: August 29th, 2019</h3>
+          <h6 class="card-top">Topic: Introduction to Linear Algebra</h6>
+          <div class="card-text">
+            <a class="btn btn-secondary btn-list" href="2940_fa19/Worksheet1.pdf">Worksheet + Solutions &raquo;</a>
+          </div>
         </div>
       </div>
-
-      <hr>
-
-      <div class="row">
-        <div class="col-md-12">
-          <h2>Week 2: September 5, 2019</h2>
-          <p><a href="2940_fa19/Notes2.pdf">Notes</a></p>
-          <p><a href="2940_fa19/Worksheet2.pdf">Worksheet + Solutions</a></p>
+      <div class="card mb-6 shadow-sm">
+        <div class="card-body">
+          <h3 class="card-top">Week 2: September 5th, 2019</h3>
+          <h6 class="card-top">Topic: Linear Systems of Equations</h6>
+          <div class="card-text">
+            <a class="btn btn-secondary btn-list" href="2940_fa19/Notes2.pdf">Notes &raquo;</a>
+          </div>
+          <div class="card-text">
+            <a class="btn btn-secondary btn-list" href="2940_fa19/Worksheet2.pdf">Worksheet + Solutions &raquo;</a>
+          </div>
         </div>
       </div>
-
-      <hr>
-
-      <div class="row">
-        <div class="col-md-12">
-          <h2>Week 3: September 12, 2019</h2>
-          <p><a href="2940_fa19/Worksheet3.pdf">Worksheet + Solutions</a></p>
-          <p><a href="2940_fa19/quiz1_205_sol.pdf">Quiz 1 Solutions (Section 205)</a></p>
-          <p><a href="2940_fa19/quiz1_208_sol.pdf">Quiz 1 Solutions (Section 208)</a></p>
+      <div class="card mb-6 shadow-sm">
+        <div class="card-body">
+          <h3 class="card-top">Week 3: September 12th, 2019</h3>
+          <h6 class="card-top">Topic: Solutions to Linear Systems</h6>
+          <div class="card-text">
+            <a class="btn btn-secondary btn-list" href="2940_fa19/Worksheet3.pdf">Worksheet + Solutions &raquo;</a>
+          </div>
+          <div class="card-text">
+            <a class="btn btn-secondary btn-list" href="2940_fa19/quiz1_205_sol.pdf">Quiz 1 Solutions (Section 205) &raquo;</a>
+          </div>
+          <div class="card-text">
+            <a class="btn btn-secondary btn-list" href="2940_fa19/quiz1_208_sol.pdf">Quiz 1 Solutions (Section 208) &raquo;</a>
+          </div>
         </div>
       </div>
-
-      <hr>
-
-      <div class="row">
-        <div class="col-md-12">
-          <h2>Week 4: September 19, 2019</h2>
-          <p><a href="2940_fa19/Notes4.pdf">Notes</a></p>
-          <p><a href="2940_fa19/Worksheet4.pdf">Worksheet + Solutions</a></p>
+      <div class="card mb-6 shadow-sm">
+        <div class="card-body">
+          <h3 class="card-top">Week 4: September 19th, 2019</h3>
+          <h6 class="card-top">Topic: Linear Transformations</h6>
+          <div class="card-text">
+            <a class="btn btn-secondary btn-list" href="2940_fa19/Notes4.pdf">Notes &raquo;</a>
+          </div>
+          <div class="card-text">
+            <a class="btn btn-secondary btn-list" href="2940_fa19/Worksheet4.pdf">Worksheet + Solutions &raquo;</a>
+          </div>
         </div>
       </div>
-
-      <hr>
-
-      <div class="row">
-        <div class="col-md-12">
-          <h2>Week 5: September 26, 2019</h2>
-          <p><a href="2940_fa19/Worksheet5.pdf">Worksheet + Solutions</a></p>
-          <p><a href="2940_fa19/quiz2_sol.pdf">Quiz 2 Solutions </a></p>
+      <div class="card mb-6 shadow-sm">
+        <div class="card-body">
+          <h3 class="card-top">Week 5: September 26th, 2019</h3>
+          <h6 class="card-top">Topic: Matrix Operations and Inverses</h6>
+          <div class="card-text">
+            <a class="btn btn-secondary btn-list" href="2940_fa19/Worksheet5.pdf">Worksheet + Solutions &raquo;</a>
+          </div>
+          <div class="card-text">
+            <a class="btn btn-secondary btn-list" href="2940_fa19/quiz2_sol.pdf">Quiz 2 Solutions &raquo;</a>
+          </div>
         </div>
       </div>
-
-      <hr>
-
-      <div class="row">
-        <div class="col-md-12">
-          <h2>Week 6: October 3rd, 2019</h2>
-          <p><a href="2940_fa19/Worksheet6.pdf">Worksheet + Solutions</a></p>
+      <div class="card mb-6 shadow-sm">
+        <div class="card-body">
+          <h3 class="card-top">Week 6: October 3rd, 2019</h3>
+          <h6 class="card-top">Topic: Factorizations and Vector Spaces</h6>
+          <div class="card-text">
+            <a class="btn btn-secondary btn-list" href="2940_fa19/Worksheet6.pdf">Worksheet + Solutions &raquo;</a>
+          </div>
         </div>
       </div>
-
-      <hr>
-
-      <div class="row">
-        <div class="col-md-12">
-          <h2>Week 7: October 10th, 2019</h2>
-          <p><a href="2940_fa19/Worksheet7.pdf">Worksheet + Solutions</a></p>
+      <div class="card mb-6 shadow-sm">
+        <div class="card-body">
+          <h3 class="card-top">Week 7: October 10th, 2019</h3>
+          <h6 class="card-top">Topic: Bases and Coordinate Systems</h6>
+          <div class="card-text">
+            <a class="btn btn-secondary btn-list" href="2940_fa19/Worksheet7.pdf">Worksheet + Solutions &raquo;</a>
+          </div>
         </div>
       </div>
-
-      <hr>
-
-      <div class="row">
-        <div class="col-md-12">
-          <h2>Week 8: October 17th, 2019</h2>
-          <p><a href="2940_fa19/Worksheet8.pdf">Worksheet + Solutions</a></p>
-          <p><a href="2940_fa19/quiz3_205_sol.pdf">Quiz 3 Solutions (Section 205)</a></p>
-          <p><a href="2940_fa19/quiz3_208_sol.pdf">Quiz 3 Solutions (Section 208)</a></p>
+      <div class="card mb-6 shadow-sm">
+        <div class="card-body">
+          <h3 class="card-top">Week 8: October 17th, 2019</h3>
+          <h6 class="card-top">Topic: Coordinate Systems and Dimension</h6>
+          <div class="card-text">
+            <a class="btn btn-secondary btn-list" href="2940_fa19/Worksheet8.pdf">Worksheet + Solutions &raquo;</a>
+          </div>
+          <div class="card-text">
+            <a class="btn btn-secondary btn-list" href="2940_fa19/quiz3_205_sol.pdf">Quiz 3 Solutions (Section 205) &raquo;</a>
+          </div>
+          <div class="card-text">
+            <a class="btn btn-secondary btn-list" href="2940_fa19/quiz3_208_sol.pdf">Quiz 3 Solutions (Section 208) &raquo;</a>
+          </div>
         </div>
       </div>
 

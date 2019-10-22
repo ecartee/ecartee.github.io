@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Elliot Cartee's personal website">
+    <meta name="author" content="Elliot Cartee">
+
+    <title>Elliot Cartee</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+
+    <!-- Leaflet Javascript -->
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+
+    <!-- Custom styles for this template -->
+    <link href="presentations.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="index.html">Elliot Cartee</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="publications.html">Publications</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Presentations <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="teaching.html">Teaching</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Talks and Presentations</h1>
+        <div id="mapid"></div>
+        <script>
+          var mymap = L.map('mapid').setView([40, -50], 2);
+
+          L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 18,
+            id: 'mapbox.streets',
+            accessToken: 'pk.eyJ1IjoiZWNhcnRlZSIsImEiOiJjazIxODFpNDcwNDNsM3FxbGlmNzFoanZzIn0.RAsILo938xV_y4Y6gkYkjw'
+            }).addTo(mymap);
+
+          // Markers
+          var redIcon = new L.Icon({
+            iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowSize: [41, 41]
+          });
+
+          // NCSU
+          var marker12 = L.marker([35.783776, -78.671012]).addTo(mymap);
+          marker12.bindPopup("<b>Summer Undergraduate Research Symposium</b><br>August 1, 2012.");
+
+          // SCAN 2015
+          var marker11 = L.marker([42.444977, -76.481059]).addTo(mymap);
+          marker11.bindPopup("<b>Scientific Computing and Numerics Seminar</b><br>April 16th, 2015.");
+
+          // IPAM MFG Workshop
+          var marker10 = L.marker([34.070211, -118.441844]).addTo(mymap);
+          marker10.bindPopup("<b>Mean Field Games Workshop</b><br>August 28, 2017.");
+
+          // NSF ATD 2018
+          var marker9 = L.marker([38.926490, -77.086652]).addTo(mymap);
+          marker9.bindPopup("<b>NSF Algorithms for Threat Detection Workshop</b><br>October 11, 2018.");
+
+          // Syracuse 2019
+          var marker8 = L.marker([43.036555, -76.134000]).addTo(mymap);
+          marker8.bindPopup("<b>Annual New York State Regional Graduate Mathematics Conference</b><br>March 23rd, 2019.");
+
+          // RPI AMD 2019
+          var marker7 = L.marker([42.729330, -73.682520]).addTo(mymap);
+          marker7.bindPopup("<b>RPI Applied Math Days</b><br>April 6th, 2019.");
+
+          // ICIAM 2019
+          var marker6 = L.marker([39.477435, -0.359827]).addTo(mymap);
+          marker6.bindPopup("<b>International Congress on Industrial and Applied Mathematics</b><br>July 17th, 2019.");
+
+          // SCAN 2019
+          var marker5 = L.marker([42.444977, -76.481059]).addTo(mymap);
+          marker5.bindPopup("<b>Scientific Computing and Numerics Seminar</b><br>September 16th, 2019.");
+
+          // ASOFR Workshop
+          var marker4 = L.marker([36.595064, -121.893821]).addTo(mymap);
+          marker4.bindPopup("<b>3rd ASOFR Workshop on Computational Control</b><br>October 7th, 2019.");
+
+          // CompSust DC 2019
+          var marker3 = L.marker([40.443371, -79.945635]).addTo(mymap);
+          marker3.bindPopup("<b>Doctoral Consortium on Computational Sustainability</b><br>October 18th, 2019.");
+
+          // NSF ATD 2019
+          var marker2 = L.marker([38.899790, -77.047150]).addTo(mymap);
+          marker2.bindPopup("<b>NSF Algorithms for Threat Detection Workshop</b><br>October 22nd, 2019.");
+          marker2.setIcon(redIcon);
+
+          // CDC 2019
+          var marker1 = L.marker([43.704687, 7.260917]).addTo(mymap);
+          marker1.bindPopup("<b>IEEE Conference on Decision and Control</b><br>December 13th, 2019.");
+          marker1.setIcon(redIcon);
+
+        </script>
+      </div>
+      
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6" style="margin-bottom:1cm">
+          <h4>Upcoming <img src="https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png"></h4>
+          <div class="card mb-6 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-top">IEEE Conference on Decision and Control</h5>
+              <p class="card-text"><i>Nice, France</i>, December 13th, 2019.</p>
+            </div>
+          </div>
+          <div class="card mb-6 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-top">NSF Algorithms for Threat Detection Workshop</h5>
+              <p class="card-text"><i>George Washington University</i>, October 22nd, 2019.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <h4>Past <img src="https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png"></h4>
+          <div class="card mb-6 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-top">Doctoral Consortium on Computational Sustainability</h5>
+              <p class="card-text"><i>Carnegie Mellon University</i>, October 18th 2019.</p>
+            </div>
+          </div>
+          <div class="card mb-6 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-top">3rd ASOFR Workshop on Computational Control</h5>
+              <p class="card-text"><i>Monterey, CA</i>, October 7th 2019.</p>
+            </div>
+          </div>
+          <div class="card mb-6 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-top">Scientific Computing and Numerics Seminar</h5>
+              <p class="card-text"><i>Cornell University</i>, September 16th 2019.</p>
+            </div>
+          </div>
+          <div class="card mb-6 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-top">International Congress on Industrial and Applied Mathematics</h5>
+              <p class="card-text"><i>Valencia, Spain</i>, July 17th 2019.</p>
+            </div>
+          </div>
+          <div class="card mb-6 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-top">Applied Math Days</h5>
+              <p class="card-text"><i>Rensselaer Polytechnic Institute</i>, April 6th 2019.</p>
+            </div>
+          </div>
+          <div class="card mb-6 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-top">Annual New York State Regional Graduate Mathematics Conference</h5>
+              <p class="card-text"><i>Syracuse University</i>, March 23rd 2019.</p>
+            </div>
+          </div>
+          <div class="card mb-6 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-top">NSF Algorithms for Threat Detection Workshop</h5>
+              <p class="card-text"><i>American University</i>, October 11, 2018.</p>
+            </div>
+          </div>
+          <div class="card mb-6 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-top">Mean Field Games Workshop</h5>
+              <p class="card-text"><i>Institute for Pure and Applied Mathematics, UCLA</i>, August 28, 2017.</p>
+            </div>
+          </div>
+          <div class="card mb-6 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-top">Scientific Computing and Numerics Seminar</h5>
+              <p class="card-text"><i>Cornell University</i>, April 6, 2015.</p>
+            </div>
+          </div>
+          <div class="card mb-6 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-top">Summer Undergraduate Research Symposium</h5>
+              <p class="card-text"><i>North Carolina State University</i>, August 1, 2012.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; Elliot Cartee 2019</p>
+        <p>Built using <a href="https://getbootstrap.com/">Bootstrap</a> and <a href="https://leafletjs.com/">Leaflet</a>.</p>
+      </footer>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
