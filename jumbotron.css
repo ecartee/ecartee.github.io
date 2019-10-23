@@ -3,7 +3,7 @@ body {
   padding-top: 3.5rem;
 }
 
-img {
+.img-profile {
 	float: right;
 	width: 70%;
 	height: auto;
@@ -20,4 +20,16 @@ img {
 
 .btn-list {
   margin-top: 0.5rem;
+}
+
+.img-icon {
+  width: 24px;
+  height: auto;
+  border-radius: 5px;
+}
+
+#mapid {
+  align: center; 
+  height: 240px;
+  width: auto;
 }

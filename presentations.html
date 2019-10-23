@@ -18,7 +18,7 @@
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
 
     <!-- Custom styles for this template -->
-    <link href="presentations.css" rel="stylesheet">
+    <link href="jumbotron.css" rel="stylesheet">
   </head>
 
   <body>
@@ -114,7 +114,6 @@
           // NSF ATD 2019
           var marker2 = L.marker([38.899790, -77.047150]).addTo(mymap);
           marker2.bindPopup("<b>NSF Algorithms for Threat Detection Workshop</b><br>October 22nd, 2019.");
-          marker2.setIcon(redIcon);
 
           // CDC 2019
           var marker1 = L.marker([43.704687, 7.260917]).addTo(mymap);
@@ -129,23 +128,23 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6" style="margin-bottom:1cm">
-          <h4>Upcoming <img src="https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png"></h4>
+          <h4>Upcoming <img class="img-icon" src="https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png"></h4>
           <div class="card mb-6 shadow-sm">
             <div class="card-body">
               <h5 class="card-top">IEEE Conference on Decision and Control</h5>
               <p class="card-text"><i>Nice, France</i>, December 13th, 2019.</p>
             </div>
           </div>
+        </div>
+
+        <div class="col-md-6">
+          <h4>Past <img class="img-icon" src="https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png"></h4>
           <div class="card mb-6 shadow-sm">
             <div class="card-body">
               <h5 class="card-top">NSF Algorithms for Threat Detection Workshop</h5>
               <p class="card-text"><i>George Washington University</i>, October 22nd, 2019.</p>
             </div>
           </div>
-        </div>
-
-        <div class="col-md-6">
-          <h4>Past <img src="https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png"></h4>
           <div class="card mb-6 shadow-sm">
             <div class="card-body">
               <h5 class="card-top">Doctoral Consortium on Computational Sustainability</h5>
